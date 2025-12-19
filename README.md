@@ -3,6 +3,9 @@
 A Rust procedural macro that conditionally makes struct fields public based on cfg attributes.
 `syn`-free implementation using only `proc_macro` APIs.
 
+This is usefull when your api contain some struct that by it's nature POD, and can allow direct field modifications (like for extension purposes),
+but exposing them, and changing their fields declaration/naming later is a breaking change acording to semver rules.
+
 [![crates.io](https://img.shields.io/crates/v/pub_if.svg)](https://crates.io/crates/pub_if)
 [![docs.rs](https://docs.rs/pub_if/badge.svg)](https://docs.rs/pub_if)
 
