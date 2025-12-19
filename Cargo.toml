@@ -1,0 +1,20 @@
+[package]
+name = "pub_if"
+version = "0.1.0"
+edition = "2024"
+authors = ["Volodymyr Motylenko <me@vldm.cc>"]
+license = "Apache-2.0 OR MIT"
+description = "A Rust procedural macro that conditionally makes struct fields public based on cfg attributes."
+
+
+[lib]
+proc-macro = true
+
+[features]
+foo = []
+test_feature = []
+
+[dependencies]
+
+[dev-dependencies]
+trybuild = "1.0"

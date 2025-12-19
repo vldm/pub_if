@@ -1,0 +1,5 @@
+error[E0616]: field `field` of struct `Struct` is private
+  --> tests/compile_fail/without_feature_private_access.rs:25:15
+   |
+25 |     let _ = s.field;
+   |               ^^^^^ private field
